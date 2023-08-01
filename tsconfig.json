@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2017",
+    "jsx": "react",
+    "lib": ["ES2020", "ES2020.Promise", "dom"],
+    "declaration": true,
+    "declarationDir": "lib/@types",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["reflect-metadata", "node"],
+    "pretty": false,
+    "removeComments": true
+  }
+}

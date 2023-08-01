@@ -1,0 +1,56 @@
+{
+  "name": "@lamvd0101/reactive-js",
+  "version": "1.2.1",
+  "description": "",
+  "license": "MIT",
+  "author": "lamvd0101",
+  "keywords": [
+    "reactive-js",
+    "javascript",
+    "react",
+    "react-native"
+  ],
+  "homepage": "",
+  "repository": "https://github.com/lamvd0101/reactive-js",
+  "bugs": "https://github.com/lamvd0101/reactive-js/issues",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "main": "./lib",
+  "types": "./lib/@types",
+  "scripts": {
+    "clear": "rimraf lib",
+    "build": "yarn clear && tsc",
+    "watch": "tsc -w",
+    "lint": "eslint . --max-warnings 0 --ext .js,.jsx,.ts,.tsx"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^1",
+    "inversify": "^6",
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-redux": "^8",
+    "reflect-metadata": "^0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "inversify": "^6.0.1",
+    "react-redux": "^8.1.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
