@@ -31,6 +31,9 @@ import {viewModel} from './base/decorators';
 import {reactiveContext, useDataViewModel} from './hooks';
 import {store} from './store';
 
+/**
+ * Reactive Component
+ */
 function ReactReactive(props: {children: React.ReactNode}) {
   return (
     <Provider store={store} context={reactiveContext}>

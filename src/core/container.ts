@@ -9,6 +9,9 @@ function logger(planAndResolve: interfaces.Next): interfaces.Next {
   };
 }
 
+/**
+ * DI container
+ */
 const container = new Container({
   /**
    * Set this to true to force the container ignore injected base classes

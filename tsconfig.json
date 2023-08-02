@@ -18,6 +18,6 @@
     "emitDecoratorMetadata": true,
     "types": ["reflect-metadata", "node"],
     "pretty": false,
-    "removeComments": true
+    "removeComments": false
   }
 }

@@ -2,6 +2,9 @@ import {configureStore} from '@reduxjs/toolkit';
 
 import reducer from './reducer';
 
+/**
+ * Redux store
+ */
 export const store = configureStore({
   reducer,
   devTools: {
@@ -10,7 +13,11 @@ export const store = configureStore({
   },
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
+/**
+ * Type of root state
+ */
 export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+/**
+ * Type of dispatch
+ */
 export type AppDispatch = typeof store.dispatch;

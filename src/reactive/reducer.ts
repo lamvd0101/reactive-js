@@ -25,9 +25,15 @@ export const reactiveSlice = createSlice({
   name: REACTIVE_SLICE_NAME,
   initialState,
   reducers: {
+    /**
+     * Set new key for view model. It will be trigger re-render component.
+     */
     setViewModelKey: (state, action: PayloadAction<string>) => {
       state.viewModels[action.payload] = randomKey();
     },
+    /**
+     * Remove key for view model
+     */
     removeViewModelKey: (state, action: PayloadAction<string>) => {
       delete state.viewModels[action.payload];
     },

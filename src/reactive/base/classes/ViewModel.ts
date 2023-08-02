@@ -11,16 +11,26 @@ export class ViewModelClass<T = any> implements ViewModel<T> {
     this.setup();
   }
 
+  /**
+   * Setup view model
+   */
   private setup() {
     this.key = randomKey();
     store.dispatch(setViewModelKey(this.key));
   }
 
   // === Public methods ===
+  /**
+   * Destroy view model from store.
+   * To optimize store size.
+   */
   destroy(): void {
     store.dispatch(removeViewModelKey(this.key));
   }
 
+  /**
+   * Manually trigger re-render component.
+   */
   triggerRender() {
     store.dispatch(setViewModelKey(this.key));
   }
